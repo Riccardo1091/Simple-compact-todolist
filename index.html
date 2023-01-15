@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" type?="text/css">
+    <title>StartPage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="min-h-screen relative">
+    <div class="bg-black w-full h-full absolute opacity-40 z-[-1]"></div>
+    <div class="container mx-auto py-8 flex justify-center gap-4 items-start">
+
+        <div class="sx-col basis-1/4 gap-4 flex flex-wrap justify-center"></div>
+
+        <div class="center-col basis-2/4 gap-4 flex justify-center flex-col items-center">
+
+            <div class="tabs container flex justify-center gap-4"></div>
+            <div class="tabsBottom container flex justify-center gap-4"></div>
+
+            <div class="tabsTodo container flex flex-col justify-center gap-4 items-center">
+                <div class="flex gap-4">
+                    <input value=""
+                        class="opacity-70 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 focus:outline-none focus:shadow-outline"
+                        type="text" id="inputTodo" placeholder="Aggiungi todo">
+                    <button
+                        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline opacity-80 hover:opacity-95 hover:scale-95 glass"
+                        id="new" type="button">
+                        Aggiungi
+                    </button>
+                </div>
+                <ul id="todoList" class="flex flex-col gap-1 w-full dark:text-white">
+                </ul>
+            </div>
+        </div>
+
+        <div class="dx-col basis-1/4 gap-4 flex flex-wrap justify-center"></div>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./bookmarks.js"></script>
+    <script src="./script.js"></script>
+    <script src="./todo.js"></script>
+</body>
+
+</html>
